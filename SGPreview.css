@@ -1,0 +1,25 @@
+.SGPreviewRow {
+    border-bottom: solid #929690 1px;
+    height: 20px;
+}
+.SGPreviewCol  {
+    display: inline-block;
+    padding-left: 5px;
+    vertical-align: middle;
+    /*word-wrap: break-word;*/
+    white-space: nowrap;
+}
+.firstCol {
+    clear: left;
+}
+.SGPreviewCol:not(.lastCol) {
+    border-right: solid #929690 1px;
+}
+/*.SGPreviewRow:nth-child(n+4){*/
+    /*height: 5px;*/
+/*}*/
+#SGPreview{
+    padding:10px 10px 10px 10px;
+    box-shadow: inset 0px 0px 4px 1px rgba(0,0,0,0.9);
+    border-radius: 5px 5px 5px 5px;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SGPreview Example</title>
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="./SGPreview.js"></script>
+    <link rel="stylesheet" type="text/css" href="./SGPreview.css">
+
+</head>
+<body>
+<div id="previewHolder"></div>
+<style>
+    #previewHolder{
+        position: absolute;
+        left: 50px;
+    }
+</style>
+
+
+<script>
+    var myPreview = $("#previewHolder").SGPreview("File Preview",5);
+    var sampleData  = {
+        "content": [
+            [
+                "Gecko",
+                "Firefox 1.0",
+                "Win 98+  / OSX.2+",
+                "1.7",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Firefox 1.5",
+                "Win 98+ / OSX.2+",
+                "1.8",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Firefox 2.0",
+                "Win 98+ / OSX.2+",
+                "1.8",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Firefox 3.0",
+                "Win 2k+ / OSX.3+",
+                "1.9",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Camino 1.0",
+                "OSX.2+",
+                "1.8",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Camino 1.5",
+                "OSX.3+",
+                "1.8",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Netscape 7.2",
+                "Win 95+ / Mac OS 8.6-9.2",
+                "1.7",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Firefox 1.0",
+                "Win 98+ / OSX.2+",
+                "1.7",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Firefox 1.5",
+                "Win 98+ / OSX.2+",
+                "1.8",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Firefox 2.0",
+                "Win 98+ / OSX.2+",
+                "1.8",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Firefox 3.0",
+                "Win 2k+ / OSX.3+",
+                "1.9",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Camino 1.0",
+                "OSX.2+",
+                "1.8",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Camino 1.5",
+                "OSX.3+",
+                "1.8",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Netscape 7.2",
+                "Win 95+ / Mac OS 8.6-9.2",
+                "1.7",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Netscape Browser 8",
+                "Win 98SE+",
+                "1.7",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Netscape Navigator 9",
+                "Win 98+ / OSX.2+",
+                "1.8",
+                "A"
+            ],
+            [
+                "Gecko",
+                "Mozilla 1.0",
+                "Win 95+ / OSX.1+",
+                "1",
+                "A"
+            ]
+        ]};
+    myPreview.newData(sampleData);
+    myPreview.show();
+    myPreview.highlight([1,6],[2,3])
+
+</script>
+</body>
+</html>
