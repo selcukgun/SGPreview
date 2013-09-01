@@ -41,7 +41,7 @@
         var rowRange = [0,numShownRow];
 
         var rowHeight = 20.0;
-        $(this).width("900px");
+//        $(this).width("900px");
         $(this).css({"display":"none",
         "padding-left":"10px",
         "padding-bottom": "10px",
