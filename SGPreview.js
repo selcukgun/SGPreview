@@ -98,7 +98,9 @@
                     }
                 }
             }
-            $(".SGPreviewCol").width(((95.0/numCol)).toString() +"%");
+            var rowW = parseInt($(main).width()) - 40;
+            var addPer = 100.0/rowW + 1;
+            $(".SGPreviewCol").width((((100.00-addPer)/numCol)-addPer).toString() +"%");
             $(".SGPreviewRow").slice(rowRange[1],numRow).children().hideText();
             $(".SGPreviewRow").mouseenter(function(){
                 var id =$(this).attr('id');
@@ -202,4 +204,4 @@
         };
         return this;
     };
-}( jQuery ));
+}(jQuery));
