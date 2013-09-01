@@ -98,7 +98,7 @@
                     }
                 }
             }
-            $(".SGPreviewCol").width(((100.0/numCol)-1).toString() +"%");
+            $(".SGPreviewCol").width(((95.0/numCol)).toString() +"%");
             $(".SGPreviewRow").slice(rowRange[1],numRow).children().hideText();
             $(".SGPreviewRow").mouseenter(function(){
                 var id =$(this).attr('id');
