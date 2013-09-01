@@ -87,7 +87,7 @@
                 var row = $("#row"+i);
                 row.addClass("SGPreviewRow");
                 for (var j=-1; j<numCol-1;j++){
-
+                    if (data["content"][i][j] == "") data["content"][i][j] = "&nbsp";
                     if (j<0){
                         if (i>0) row.append("<div class='SGPreviewCol col"+j + "'>" +i+ "</div>");
                         else row.append("<div class='SGPreviewCol col"+j + "'>#Row</div>");
